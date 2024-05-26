@@ -24,7 +24,7 @@ public class ContactController {
             @RequestParam String message) {
 
         SimpleMailMessage mailMessage = new SimpleMailMessage();
-        mailMessage.setTo("davidprograms7@gmail.com");  // Replace with your email
+        mailMessage.setTo("davidprograms7@gmail.com");
         mailMessage.setSubject("New Contact Form Submission: " + subject);
         mailMessage.setText("Name: " + firstName + " " + lastName + "\nEmail: " + email + "\nMessage: " + message);
 
